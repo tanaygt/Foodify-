@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style_login.css">
+
+  <!-- FONT LINKS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  
+  <div id="container">
+    <h1>Welcome to Foodify!</h1>
+
+    <div id="form-content">
+      <img src="Images/logo.png" alt="logo" id="logo">
+    <br>
+      <label id="lab-name" for="name">Name:</label><br>
+      <input class="txtbx" type="text" id="name" placeholder="Enter Name" autocomplete="off" autocapitalize="off"><br>
+      <label id="lab-pass" for="pass">Password:</label><br>
+      <input class="txtbx" type="password" id="pass" placeholder="Enter Password" autocomplete="off" autocapitalize="off"><br>
+      <input type="checkbox" onclick="toggleVisibility()" name="shwpass" id="check">
+      <span id="showpass">Show Password
+      </span>
+      <div id="button">
+        <a href="home.html"><button class="btn grey">Sign In</button></a>
+        <button class="btn grey" type="reset">Reset</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    function toggleVisibility() {
+      var getPasword = document.getElementById("pass");
+      if (getPasword.type === "password") {
+        getPasword.type = "text";
+      } else {
+        getPasword.type = "password";
+      }
+    }  
+  </script>
+  <marquee behavior="scroll" Scrolldelay="65" direction="left">In association with LNCT Group of Colleges</marquee>
+
+</body>
+
+</html>

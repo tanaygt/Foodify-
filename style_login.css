@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('Images/bg.jpeg');
+    background-color: #393E46;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#form-content{
+    border: 0px solid white;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: max-content;
+    padding: 40px 55px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 18em;
+    height: 19em;
+    margin-top: -9.5em;
+    margin-left: -9em;
+    color: black;
+    border-radius: 10px;
+}
+.txtbx{
+    height: 30px;
+    background-color: rgb(106, 102, 102);
+    border-color: 1px solid rgb(89, 88, 88);
+    border-radius: 15px;
+    color: aliceblue;
+}
+.txtbx:hover{
+    height: 32px;
+    background-color: rgb(0, 0, 0);
+    border-color: 1px solid rgb(0, 0, 0);
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.4);
+}
+#name{
+    margin-bottom: 10px;
+}
+#lab-name{
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 3px 2px 5px white;
+}
+#lab-pass{
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 3px 2px 5px white;
+}
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 57px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 15vh;
+    margin-left: 30px;
+    color: rgb(237, 19, 11);
+}
+#logo{
+    margin-left: 34%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    filter: drop-shadow(5px 3px 5px black);
+}
+#button{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+
+}
+.btn{
+    font-size: 17px;
+    border: 0px solid black;
+    border-radius: 15px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 5px;
+    padding-top: 4px;
+}
+.grey {
+    background-color: rgba(237, 19, 11, 0.6);
+    color: rgb(230, 228, 228);
+}
+.btn:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    background-color: black;
+}
+#check:checked{
+    accent-color : rgb(0, 0, 0);
+}
+span{
+    margin-left: -5px;
+    font-size: 13px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px white;
+}
+marquee{
+    color: white;
+    position: relative;
+    top: 58vh;
+    font-size: 19px;
+}

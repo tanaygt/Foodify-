@@ -1,0 +1,339 @@
+/* justify-content for horizontal alignment */
+/* align-content for vertical alignment */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+body{
+    background-color: #F8F8F8;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 10px;
+}
+
+#container {
+    height: 100%;
+    margin-top: 20px;
+}
+
+
+header{
+    width: 100%;
+    height: 50px;
+    background: #F8F8F8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header div ol li .quantity{
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: 10.5px;
+    left: 83.5%;
+    padding: 2px 9px;
+    z-index: 1;
+}
+.logo{
+    font-size: 2.2em;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Pacifico', cursive;
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+.nav ol{
+    display: flex;
+    list-style: none;
+}
+
+.nav ol li{
+    margin: 1em;
+}
+.nav ol li a{
+    text-decoration: none;
+    padding: 0.2em 1.2em 0.9em 1.2em;
+    border-radius: 10px 10px 0 0;
+    color: rgb(39, 39, 39);
+    transition: all .4s;
+    position: relative;
+    z-index: 1;
+}
+.nav ol li .underline::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 41px;
+    border-radius: 10px 10px 0 0;
+    background: #853333;
+    transform-origin: bottom;
+    background: linear-gradient(to right, #c06017, #903c0e, #6b230d);
+    transform: scaleY(0.05);
+    z-index: -1;
+    transition: all .4s;
+}
+
+.nav ol li .underline:hover::before{transform: scaleY(1.1);}
+.nav ol li .underline:hover{
+    color: white;
+}
+
+.buttons {
+    margin-top: 20px;
+    font-size: 17px;
+    border: 1px solid ;
+    border-radius: 15px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 5px;
+
+}
+.buttons:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.black {
+    background: linear-gradient(to right, #c06017, #903c0e, #6b230d);
+    color: white;
+}
+
+#cart {
+    height: 35px;
+    width: 35px;
+    margin-top: -5px;
+    margin-bottom: -20px;
+}
+#hero {
+    display: flex;
+    width: 100%;
+    margin-bottom: 100px;
+}
+#sidepane {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    width: max-content;
+    height: max-content;
+    padding: 5px 6px;
+    border-radius: 6px;
+}
+.cafe {
+    text-decoration: none;
+    height: fit-content;
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    font-weight: 500;
+    border-radius: 10px 10px 0 0;
+    color: rgb(39, 39, 39);
+    transition: all .4s;
+    position: relative;
+    z-index: 1;
+}
+
+.cafe::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 41px;
+    border-radius: 0px 0px 10px 10px;
+    background: #853333;
+    transform-origin: top;
+    background: linear-gradient(to right, #c06017, #903c0e, #6b230d);
+    transform: scaleY(0.05);
+    z-index: -1;
+    transition: all .4s;
+}
+
+
+.cafe:hover::before{transform: scaleY(0.7);}
+.cafe:hover{
+    color: white;
+}
+
+#cafe2{
+    width: max-content;
+    width: auto;
+}
+#cafe4{
+    width: max-content;
+}
+#card{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.card {
+    margin-right: 7px;
+    border: 1.70px solid rgb(184, 181, 181);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 5px;
+    padding: 5px;
+}
+.card:hover{
+    background-color: #e9ebec;
+    transform: scale(1.025);
+    margin-right: 7px;
+}
+
+.card-body {
+    flex: 1rem 1rem auto;
+    padding: 1rem 1rem;
+
+}
+
+.card-img-top {
+    height: 58%;
+    width: 100%;
+    object-fit: cover ;
+    float: inline-end;
+    box-sizing: border-box;
+    box-shadow: -3px 3px 5px grey;
+}
+
+.card-text {
+    color: rgb(80, 80, 80);
+    font-family: 'Prosto One', cursive;
+    font-size: 14px;
+    margin-bottom: 9px;
+    font-weight: 460;
+}
+.bton {
+    background-color: rgb(247, 92, 3);
+    padding: 5px 12px;
+    padding-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    text-decoration: none;
+    font-family: 'Chivo Mono', monospace;
+}
+.bton:hover {
+    background-color: rgb(232, 41, 8);
+    font-size: 18px;
+    color: white;
+    transition: 0.20s;
+}
+#footer{
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(247, 92, 3);
+    color: white;
+    position: absolute;    bottom: 0;    left: 0;    right: 0;
+}
+
+.chai-garam{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 450px;
+    width: 250px;
+    position: relative;
+     
+}
+.chai-garam:hover{
+    transform: scale(1.05);
+}
+#p-menu{
+    margin-top: 19%;
+    margin-left: 15%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.hc{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 450px;
+    width: 330px;
+    position: relative;
+     
+}
+.hc:hover{
+    transform: scale(1.05);
+}
+.nescafe{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 450px;
+    width: 250px;
+    position: relative;
+     
+}
+.nescafe:hover{
+    transform: scale(1.05);
+}
+.df{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 250px;
+    width: 650px;
+     
+}
+.df:hover{
+    transform: scale(1.05);
+}
+#df-menu{
+    display: flex;
+    flex-flow: row wrap;
+}
+#p-df-menu{
+    margin-top: 15%;
+    margin-left: auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+.amul{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 450px;
+    width: 250px;
+    
+}
+.amul:hover{
+    transform: scale(1.05);
+}
+#amul-menu{
+    display: flex;
+    flex-flow: row wrap;
+}
+#p-amul-menu{
+    margin-top: 15%;
+    margin-left: 5%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.bdr-menu{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.cart-box{
+    width: 100px;
+    background-color: #6b230d;
+}
+
+.crt-on{
+    border: none;
+}
